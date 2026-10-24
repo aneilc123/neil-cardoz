@@ -1,5 +1,5 @@
 Neil Cardoz
-starkdan8@gmail.com
+neilcardoz1@gmail.com
 Video: _link to be added_
 Run: `python checker.py <pack_folder>`
 
@@ -87,3 +87,5 @@ distort the comparisons for the others.
   on the sunlight sensor.
 - **The 35 h gap at S08** cannot be filled; it is only flagged so rain totals are not trusted.
 - **No tests** beyond running it on altered copies of the pack.
+
+

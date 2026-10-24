@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Weather Report</title>
+<style>
+  @page { size: A4; margin: 13mm 14mm; }
+  body { margin:0; color:#000; background:#fff; font: 11.5pt/1.4 Arial, Helvetica, sans-serif; }
+  h1 { font-size:26pt; margin:0; }
+  .sub { font-size:10.5pt; margin:2px 0 10px; }
+  .summary { border:2px solid #000; padding:10px 12px; font-size:12.5pt; }
+  .summary p { margin:0 0 6px; } .summary p:last-child { margin:0; }
+  .red { color:#c8102e; }
+  .grid { display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:10px; }
+  .box { border:1.5px solid #000; padding:8px 10px; }
+  h2 { font-size:13pt; margin:0 0 6px; }
+  table { border-collapse:collapse; width:100%; font-size:10.5pt; }
+  td { padding:3px 4px 3px 0; border-bottom:1px solid #ccc; vertical-align:top; }
+  tr:last-child td { border-bottom:0; }
+  td.s { font-weight:bold; width:34px; }
+  td.r { text-align:right; white-space:nowrap; }
+  .small { font-size:9.5pt; margin:5px 0 0; }
+</style></head><body>
+
+<h1>Weather Report</h1>
+<p class="sub">Ridgeline Schools Weather Network · 8 stations · 1 March – 11 April 2025</p>
+
+<div class="summary">
+  <p><b>Data for the spring summary:</b> almost all of it is usable. 91% is fine as recorded,
+  7% is fine after a simple fix, and only 2% must be left out.</p>
+  <p><b>Technician next week:</b> <span class="red"><b>S04, Foothills Community Garden.</b></span>
+  Its temperature reads about 4&nbsp;°C too warm in sunshine and is getting worse. It looks like normal
+  weather, so it would quietly make the summary too warm. Second choice: S03.</p>
+</div>
+
+<div class="grid">
+  <div class="box">
+    <h2>Main problems and solutions</h2>
+    <table>
+      <tr><td class="s">S04</td><td>Too warm in sun (shield on newly painted post)</td><td>Clean or move the shield</td></tr>
+      <tr><td class="s">S03</td><td>Temperature stuck, or −40 / 85&nbsp;°C readings</td><td>Check cable; replace sensor</td></tr>
+      <tr><td class="s">S06</td><td>Clock 6 h slow since battery swap</td><td>Set the clock to UTC</td></tr>
+      <tr><td class="s">S07</td><td>Wind reads too low since new anemometer</td><td>Set units to km/h</td></tr>
+      <tr><td class="s">S02</td><td>Pressure 6.6 hPa too high since board swap</td><td>Calibrate the board</td></tr>
+    </table>
+  </div>
+
+  <div class="box">
+    <h2>Changes to the data, per station</h2>
+    <table>
+      <tr><td class="s">S01</td><td>None. Colder only because it is high up.</td></tr>
+      <tr><td class="s">S02</td><td>Pressure − 6.6 hPa from 21 Mar</td></tr>
+      <tr><td class="s">S03</td><td>Drop temperature 18–21 Mar + 4 single readings</td></tr>
+      <tr><td class="s">S04</td><td>Drop rain 23 Mar–2 Apr; drop temperature from 3 Apr</td></tr>
+      <tr><td class="s">S05</td><td>Drop humidity 7–11 Mar; fix map latitude to 39.754</td></tr>
+      <tr><td class="s">S06</td><td>Add 6 hours to all times from 24 Mar</td></tr>
+      <tr><td class="s">S07</td><td>Wind × 3.6 from 26 Mar</td></tr>
+      <tr><td class="s">S08</td><td>Delete the second copy of 5 Apr; 16–17 Mar missing</td></tr>
+    </table>
+  </div>
+
+  <div class="box">
+    <h2>Suggested upgrades</h2>
+    <table>
+      <tr><td>New radiation shield for S04</td><td class="r">$60–120</td></tr>
+      <tr><td>Spare temperature sensor (S03)</td><td class="r">$30–80</td></tr>
+      <tr><td>Leaf guards for all 8 rain gauges</td><td class="r">$80</td></tr>
+      <tr><td>Bigger batteries for S06 and S01 (cloudy / snowy weeks)</td><td class="r">$100–200</td></tr>
+      <tr><td>Clocks set from GPS automatically (setting change)</td><td class="r">$0</td></tr>
+      <tr><td>Auto top-up on SIM data plans</td><td class="r">~$5 / month each</td></tr>
+    </table>
+    <p class="small">Rough guide only: parts, in US dollars, not including labour.</p>
+  </div>
+
+  <div class="box">
+    <h2>Maintenance score (out of 10)</h2>
+    <svg viewBox="0 0 330 186" width="100%"><line x1="34.0" y1="0" x2="34.0" y2="172" stroke="#ddd"/><text x="34.0" y="183" font-size="10" text-anchor="middle">0</text><line x1="171.0" y1="0" x2="171.0" y2="172" stroke="#ddd"/><text x="171.0" y="183" font-size="10" text-anchor="middle">5</text><line x1="308.0" y1="0" x2="308.0" y2="172" stroke="#ddd"/><text x="308.0" y="183" font-size="10" text-anchor="middle">10</text><text x="0" y="15" font-size="12" font-weight="bold">S01</text><rect x="34" y="5" width="274.0" height="13" fill="#000"/><text x="312.0" y="16" font-size="12">10</text><text x="0" y="36" font-size="12" font-weight="bold">S02</text><rect x="34" y="26" width="219.2" height="13" fill="#000"/><text x="257.2" y="37" font-size="12">8</text><text x="0" y="57" font-size="12" font-weight="bold">S03</text><rect x="34" y="47" width="191.8" height="13" fill="#c8102e"/><text x="229.8" y="58" font-size="12">7</text><text x="0" y="78" font-size="12" font-weight="bold">S04</text><rect x="34" y="68" width="164.4" height="13" fill="#c8102e"/><text x="202.4" y="79" font-size="12">6</text><text x="0" y="99" font-size="12" font-weight="bold">S05</text><rect x="34" y="89" width="219.2" height="13" fill="#000"/><text x="257.2" y="100" font-size="12">8</text><text x="0" y="120" font-size="12" font-weight="bold">S06</text><rect x="34" y="110" width="219.2" height="13" fill="#000"/><text x="257.2" y="121" font-size="12">8</text><text x="0" y="141" font-size="12" font-weight="bold">S07</text><rect x="34" y="131" width="219.2" height="13" fill="#000"/><text x="257.2" y="142" font-size="12">8</text><text x="0" y="162" font-size="12" font-weight="bold">S08</text><rect x="34" y="152" width="219.2" height="13" fill="#000"/><text x="257.2" y="163" font-size="12">8</text></svg>
+    <p class="small">Start at 10. Minus 3 for a fault still losing data, minus 2 for one we can
+    fix in the data, minus 1 for a past problem. <span class="red">Red</span> = lowest.</p>
+  </div>
+</div>
+
+<p class="small" style="margin-top:10px">Full details for every problem are in flags.csv (made by checker.py). Times are UTC.</p>
+</body></html>

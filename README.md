@@ -1,6 +1,6 @@
 Neil Cardoz
 neilcardoz1@gmail.com
-Video: _link to be added_
+Video: [View the project video on Google Drive](https://drive.google.com/file/d/1Zrbl-UhqqhiWh1-BdoPJYmjIFR07V_BF/view?usp=sharing)
 Run: `python checker.py <pack_folder>`
 
 # Ridgeline weather network: data checker
@@ -30,7 +30,7 @@ removed: it still found every problem, including S06's clock error (from the sun
 | `report.html` / `report.pdf` | one-page report for the network coordinator |
 | `DECISIONS.md` | the technician visit, my least certain call, AI mistakes, next year, the by-hand sum |
 | `plotting.py`, `s04_evidence.png` | the evidence behind the S04 warm-bias flag |
-| `ai_logs/` | exports of the AI chats I used |
+| `ai_logs/` | AI chat logs are saved here; the available Copilot session export is partial |
 
 The data pack is not in this repository (see `.gitignore`).
 
@@ -87,5 +87,4 @@ distort the comparisons for the others.
   on the sunlight sensor.
 - **The 35 h gap at S08** cannot be filled; it is only flagged so rain totals are not trusted.
 - **No tests** beyond running it on altered copies of the pack.
-
 
